@@ -1,0 +1,78 @@
+/* styles.css - estilo simples e responsivo */
+:root {
+    --bg: #f7f7f9;
+    --card: #ffffff;
+    --accent: #0b74da;
+    --text: #222;
+}
+
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.4;
+    padding: 16px;
+}
+
+header {
+    background: var(--card);
+    padding: 24px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+header img {
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+h1 { margin: 8px 0 12px; font-size: 1.6rem; }
+h2 { margin-top: 18px; font-size: 1.2rem; color: var(--accent); }
+.habilidades { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; margin: 10px 0 0; }
+.habilidades li {
+    background: #fff9c4; /* amarelo suave para itens básicos, conforme instrução */
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 4px 40px;
+}
+
+.projeto {
+    background: var(--card);
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin: 12px 0;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+}
+
+.projeto h3 { margin: 0 0 6px; }
+.projeto p { margin: 0 0 8px; }
+.projeto a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    max-width: 900px;
+    margin: 20px auto 0;
+    text-align: center;
+    padding: 12px;
+}
